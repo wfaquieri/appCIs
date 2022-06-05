@@ -28,7 +28,9 @@ function(input, output, session) {
     })
   
   # Planilha de Status
-  status_df = read_excel("src/Planilha de Status.xlsx",
+  # git_repos = getURL("https://raw.githubusercontent.com/wfaquieri/appCIs/blob/main/src/Planilha%20de%20Status.xlsx")
+  
+  status_df = read_excel("plan_status.rds",
                          col_types = "text",
                          trim_ws = T) %>%
     janitor::clean_names()
