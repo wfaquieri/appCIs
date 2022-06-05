@@ -30,10 +30,7 @@ function(input, output, session) {
   # Planilha de Status
   # git_repos = getURL("https://raw.githubusercontent.com/wfaquieri/appCIs/blob/main/src/Planilha%20de%20Status.xlsx")
   
-  status_df = read_excel("plan_status.rds",
-                         col_types = "text",
-                         trim_ws = T) %>%
-    janitor::clean_names()
+  status_df = readRDS("plan_status.rds") 
   
   observeEvent(input$go, {
     # Obter cada elemento da lista
