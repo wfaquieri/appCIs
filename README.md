@@ -1,8 +1,6 @@
 # appCIs
 
-![image](capa_shiny.png)
-
- Shiny web application: appCIs
+Shiny web application: appCIs
 
 # Web app gif (demo)
 
